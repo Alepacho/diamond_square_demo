@@ -17,6 +17,7 @@ clean:
 	rm -rf ./lib/libimgui.a
 
 demo:
+	mkdir -p ./bin/
 	$(CC) $(STD) $(CARGS) ./src/*.cpp -I$(INC_DIR)/imgui -L$(LIB_DIR) $(LFLAGS) -limgui -o ./bin/demo
 
 imgui:
